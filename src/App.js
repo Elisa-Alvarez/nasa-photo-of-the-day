@@ -25,7 +25,7 @@ function App() {
   }
 
  useEffect (()=>{
-  axios.get(`${BASE_URL}/?api_key=${API_KEY}`)
+  axios.get(`${BASE_URL}/?api_key=${API_KEY}&date=2012-03-14`)
   .then(res => {
     setPhoto(res.data)
     console.log(res.data)
